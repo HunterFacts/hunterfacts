@@ -1,0 +1,51 @@
+doctype html
+html(lang="ru-RU")
+  head
+    | <?php include("php/db.php"); ?>
+    | <?php include("php/key.php"); ?>
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Давай другой цвет дружок
+    link(rel="stylesheet" type="text/css" href="css/main.css")
+  body
+  .logo-board
+  a.BG(href="#") Log in
+  .shape
+    .inline
+    h1.Get-started-for-free-Copy Get started for free
+    span.No-credit-card-requi-Copy No credit card required
+    | <?php echo $error; ?>
+    form.input-block(method="post")
+      .check-input
+        .input-text
+          img.img-input(src="img/user.png")
+          <input class="Rectangle-3-Copy-3" placeholder="Name" type="text" name="name"/>
+        .input-text
+          img.img-input(src="img/mail.png")
+          <input class="Rectangle-3-Copy-3" placeholder="Work email" type="mail" name="mail"/>
+        .input-text
+          img.img-input(src="img/pass.png")
+          <input class="Rectangle-3-Copy-3" placeholder="Password" type="password" name="password"/>
+      .one-checkbox
+        .checkbox-height
+          <input class="Rectangle-2" placeholder="" value ="yes" type="checkbox" name="privace"/>
+        label.label-checkbox I agree to RealtimeBoard
+          a(href="#")
+            |  Terms of Service
+          |  and
+          a(href="#")
+            |  Privacy Policy﻿
+      .two-checkbox
+        .checkbox-height
+          <input class="Rectangle-2" placeholder="" value ="yes" type="checkbox" name="privace2"/>
+        label.label-checkbox I agree to receive news and product updates from RealtimeBoard
+      <input class="Rectangle-3-Copy-5" placeholder="" value="Get started now" type="submit" name="submit"/>
+    label.or-sign-up-with-serv or sign up with services:
+    .four-labels
+      a(href="#")
+        <div class="label" style="background: url('img/icon-brand/google-g-logo.png');"></div>
+      a(href="#")
+        <div class="label" style="background: url('img/icon-brand/f-icon.png');"></div>
+      a(href="#")
+        <div class="label" style="background: url('img/icon-brand/slack-mark@2x.png');"></div>
+      a(href="#")
+        <div class="label" style="background: url('img/icon-brand/office-365.png');"></div>

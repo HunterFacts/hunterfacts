@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <?php include("php/db.php"); ?>
+    <?php include("php/key.php"); ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Давай другой цвет дружок</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body></body>
+  <div class="logo-board"></div><a class="BG" href="#">Log in</a>
+  <div class="shape">
+    <div class="inline"></div>
+    <h1 class="Get-started-for-free-Copy">Get started for free</h1><span class="No-credit-card-requi-Copy">No credit card required</span><?php echo $error; ?>
+    <form class="input-block" method="post">
+      <div class="check-input">
+        <div class="input-text"><img class="img-input" src="img/user.png"><input class="Rectangle-3-Copy-3" placeholder="Name" type="text" name="name"/></div>
+        <div class="input-text"><img class="img-input" src="img/mail.png"><input class="Rectangle-3-Copy-3" placeholder="Work email" type="mail" name="mail"/></div>
+        <div class="input-text"><img class="img-input" src="img/pass.png"><input class="Rectangle-3-Copy-3" placeholder="Password" type="password" name="password"/></div>
+      </div>
+      <div class="one-checkbox">
+        <div class="checkbox-height"><input class="Rectangle-2" placeholder="" value ="yes" type="checkbox" name="privace"/></div>
+        <label class="label-checkbox">I agree to RealtimeBoard<a href="#"> Terms of Service</a> and<a href="#"> Privacy Policy﻿</a></label>
+      </div>
+      <div class="two-checkbox">
+        <div class="checkbox-height"><input class="Rectangle-2" placeholder="" value ="yes" type="checkbox" name="privace2"/></div>
+        <label class="label-checkbox">I agree to receive news and product updates from RealtimeBoard</label>
+      </div><input class="Rectangle-3-Copy-5" placeholder="" value="Get started now" type="submit" name="submit"/>
+    </form>
+    <label class="or-sign-up-with-serv">or sign up with services:</label>
+    <div class="four-labels"><a href="#"><div class="label" style="background: url('img/icon-brand/google-g-logo.png');"></div></a><a href="#"><div class="label" style="background: url('img/icon-brand/f-icon.png');"></div></a><a href="#"><div class="label" style="background: url('img/icon-brand/slack-mark@2x.png');"></div></a><a href="#"><div class="label" style="background: url('img/icon-brand/office-365.png');"></div></a></div>
+  </div>
+</html>
